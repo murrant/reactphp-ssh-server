@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+### Added
+
+  * Added `Channel::exit()`, which ends a channel after sending an `exit-status` request, so clients such as OpenSSH exit with the reported status instead of 255.
+
 ### Changed
 
   * Upgraded to phpseclib 4 (`phpseclib/phpseclib` `^4.0`), so the server can be installed alongside packages that require it. phpseclib 3 is no longer supported.
